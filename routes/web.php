@@ -22,5 +22,5 @@ Route::any('/coba', function () {
 });
 
 Route::get('/admin', function () {
-    return 'Hello admin';
+    return view('admin.index');
 });
