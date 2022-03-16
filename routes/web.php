@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('layout.v_template');
 });
+
+Route::any('/coba', function () {
+    return view('coba');
+});
+
+Route::get('/admin', function () {
+    return view('admin.index');
+});
