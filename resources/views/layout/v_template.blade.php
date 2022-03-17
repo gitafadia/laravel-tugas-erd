@@ -1,864 +1,1278 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AdminLTE 3 | Blank Page</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>AdminLTE 2 | Dashboard</title>
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
-<link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 
-<link rel="stylesheet" href="../../dist/css/adminlte.min.css?v=3.2.0">
-<script nonce="2e4812d5-5329-4b0c-8bf0-97150067f165">(function(w,d){!function(a,e,t,r,z){a.zarazData=a.zarazData||{},a.zarazData.executed=[],a.zarazData.tracks=[],a.zaraz={deferred:[]};var s=e.getElementsByTagName("title")[0];s&&(a.zarazData.t=e.getElementsByTagName("title")[0].text),a.zarazData.w=a.screen.width,a.zarazData.h=a.screen.height,a.zarazData.j=a.innerHeight,a.zarazData.e=a.innerWidth,a.zarazData.l=a.location.href,a.zarazData.r=e.referrer,a.zarazData.k=a.screen.colorDepth,a.zarazData.n=e.characterSet,a.zarazData.o=(new Date).getTimezoneOffset(),a.dataLayer=a.dataLayer||[],a.zaraz.track=(e,t)=>{for(key in a.zarazData.tracks.push(e),t)a.zarazData["z_"+key]=t[key]},a.zaraz._preSet=[],a.zaraz.set=(e,t,r)=>{a.zarazData["z_"+e]=t,a.zaraz._preSet.push([e,t,r])},a.dataLayer.push({"zaraz.start":(new Date).getTime()}),a.addEventListener("DOMContentLoaded",(()=>{var t=e.getElementsByTagName(r)[0],z=e.createElement(r);z.defer=!0,z.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(a.zarazData))),t.parentNode.insertBefore(z,t)}))}(w,d,0,"script");})(window,document);</script></head>
-<body class="hold-transition sidebar-mini">
+<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
 
+<link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+
+<link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
+
+<link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+
+<link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+
+
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+<script nonce="6d308ede-c289-4e89-8825-6b74fae71000">(function(w,d){!function(a,e,t,r,z){a.zarazData=a.zarazData||{},a.zarazData.executed=[],a.zarazData.tracks=[],a.zaraz={deferred:[]};var s=e.getElementsByTagName("title")[0];s&&(a.zarazData.t=e.getElementsByTagName("title")[0].text),a.zarazData.w=a.screen.width,a.zarazData.h=a.screen.height,a.zarazData.j=a.innerHeight,a.zarazData.e=a.innerWidth,a.zarazData.l=a.location.href,a.zarazData.r=e.referrer,a.zarazData.k=a.screen.colorDepth,a.zarazData.n=e.characterSet,a.zarazData.o=(new Date).getTimezoneOffset(),a.dataLayer=a.dataLayer||[],a.zaraz.track=(e,t)=>{for(key in a.zarazData.tracks.push(e),t)a.zarazData["z_"+key]=t[key]},a.zaraz._preSet=[],a.zaraz.set=(e,t,r)=>{a.zarazData["z_"+e]=t,a.zaraz._preSet.push([e,t,r])},a.dataLayer.push({"zaraz.start":(new Date).getTime()}),a.addEventListener("DOMContentLoaded",(()=>{var t=e.getElementsByTagName(r)[0],z=e.createElement(r);z.defer=!0,z.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(a.zarazData))),t.parentNode.insertBefore(z,t)}))}(w,d,0,"script");})(window,document);</script></head>
+<body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
+<header class="main-header">
 
-<nav class="main-header navbar navbar-expand navbar-white navbar-light">
+<a href="index2.html" class="logo">
 
-<ul class="navbar-nav">
-<li class="nav-item">
-<a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+<span class="logo-mini"><b>A</b>LT</span>
+
+<span class="logo-lg"><b>Admin</b>LTE</span>
+</a>
+
+<nav class="navbar navbar-static-top">
+
+<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+<span class="sr-only">Toggle navigation</span>
+</a>
+
+<div class="navbar-custom-menu">
+<ul class="nav navbar-nav">
+
+<li class="dropdown messages-menu">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="fa fa-envelope-o"></i>
+<span class="label label-success">4</span>
+</a>
+<ul class="dropdown-menu">
+<li class="header">You have 4 messages</li>
+<li>
+
+<ul class="menu">
+<li>
+<a href="#">
+<div class="pull-left">
+<img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+</div>
+<h4>
+Support Team
+<small><i class="fa fa-clock-o"></i> 5 mins</small>
+</h4>
+<p>Why not buy a new awesome theme?</p>
+</a>
 </li>
-<li class="nav-item d-none d-sm-inline-block">
-<a href="../../index3.html" class="nav-link">Home</a>
+
+<li>
+<a href="#">
+<div class="pull-left">
+<img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+</div>
+<h4>
+AdminLTE Design Team
+<small><i class="fa fa-clock-o"></i> 2 hours</small>
+</h4>
+<p>Why not buy a new awesome theme?</p>
+</a>
 </li>
-<li class="nav-item d-none d-sm-inline-block">
-<a href="#" class="nav-link">Contact</a>
+<li>
+<a href="#">
+<div class="pull-left">
+<img src="dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+</div>
+<h4>
+Developers
+<small><i class="fa fa-clock-o"></i> Today</small>
+</h4>
+<p>Why not buy a new awesome theme?</p>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="pull-left">
+<img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+</div>
+<h4>
+Sales Department
+<small><i class="fa fa-clock-o"></i> Yesterday</small>
+</h4>
+<p>Why not buy a new awesome theme?</p>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="pull-left">
+<img src="dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+</div>
+<h4>
+Reviewers
+<small><i class="fa fa-clock-o"></i> 2 days</small>
+</h4>
+<p>Why not buy a new awesome theme?</p>
+</a>
 </li>
 </ul>
+</li>
+<li class="footer"><a href="#">See All Messages</a></li>
+</ul>
+</li>
 
-<ul class="navbar-nav ml-auto">
-
-<li class="nav-item">
-<a class="nav-link" data-widget="navbar-search" href="#" role="button">
-<i class="fas fa-search"></i>
+<li class="dropdown notifications-menu">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="fa fa-bell-o"></i>
+<span class="label label-warning">10</span>
 </a>
-<div class="navbar-search-block">
-<form class="form-inline">
-<div class="input-group input-group-sm">
-<input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-<div class="input-group-append">
-<button class="btn btn-navbar" type="submit">
-<i class="fas fa-search"></i>
-</button>
-<button class="btn btn-navbar" type="button" data-widget="navbar-search">
-<i class="fas fa-times"></i>
-</button>
+<ul class="dropdown-menu">
+<li class="header">You have 10 notifications</li>
+<li>
+
+<ul class="menu">
+<li>
+<a href="#">
+<i class="fa fa-users text-aqua"></i> 5 new members joined today
+</a>
+</li>
+<li>
+<a href="#">
+<i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
+page and may cause design problems
+</a>
+</li>
+<li>
+<a href="#">
+<i class="fa fa-users text-red"></i> 5 new members joined
+</a>
+</li>
+<li>
+<a href="#">
+<i class="fa fa-shopping-cart text-green"></i> 25 sales made
+</a>
+</li>
+<li>
+<a href="#">
+<i class="fa fa-user text-red"></i> You changed your username
+</a>
+</li>
+</ul>
+</li>
+<li class="footer"><a href="#">View all</a></li>
+</ul>
+</li>
+
+<li class="dropdown tasks-menu">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="fa fa-flag-o"></i>
+<span class="label label-danger">9</span>
+</a>
+<ul class="dropdown-menu">
+<li class="header">You have 9 tasks</li>
+<li>
+
+<ul class="menu">
+<li>
+<a href="#">
+<h3>
+Design some buttons
+<small class="pull-right">20%</small>
+</h3>
+<div class="progress xs">
+<div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+<span class="sr-only">20% Complete</span>
 </div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="#">
+<h3>
+Create a nice theme
+<small class="pull-right">40%</small>
+</h3>
+<div class="progress xs">
+<div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+<span class="sr-only">40% Complete</span>
+</div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="#">
+<h3>
+Some task I need to do
+<small class="pull-right">60%</small>
+</h3>
+<div class="progress xs">
+<div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+<span class="sr-only">60% Complete</span>
+</div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="#">
+<h3>
+Make beautiful transitions
+<small class="pull-right">80%</small>
+</h3>
+<div class="progress xs">
+<div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+<span class="sr-only">80% Complete</span>
+</div>
+</div>
+</a>
+</li>
+
+</ul>
+</li>
+<li class="footer">
+<a href="#">View all tasks</a>
+</li>
+</ul>
+</li>
+
+<li class="dropdown user user-menu">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+<img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+<span class="hidden-xs">Alexander Pierce</span>
+</a>
+<ul class="dropdown-menu">
+
+<li class="user-header">
+<img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+<p>
+Alexander Pierce - Web Developer
+<small>Member since Nov. 2012</small>
+</p>
+</li>
+
+<li class="user-body">
+<div class="row">
+<div class="col-xs-4 text-center">
+<a href="#">Followers</a>
+</div>
+<div class="col-xs-4 text-center">
+<a href="#">Sales</a>
+</div>
+<div class="col-xs-4 text-center">
+<a href="#">Friends</a>
+</div>
+</div>
+
+</li>
+
+<li class="user-footer">
+<div class="pull-left">
+<a href="#" class="btn btn-default btn-flat">Profile</a>
+</div>
+<div class="pull-right">
+<a href="#" class="btn btn-default btn-flat">Sign out</a>
+</div>
+</li>
+</ul>
+</li>
+
+<li>
+<a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+
+<aside class="main-sidebar">
+
+<section class="sidebar">
+
+<div class="user-panel">
+<div class="pull-left image">
+<img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+</div>
+<div class="pull-left info">
+<p>Alexander Pierce</p>
+<a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+</div>
+</div>
+
+<form action="#" method="get" class="sidebar-form">
+<div class="input-group">
+<input type="text" name="q" class="form-control" placeholder="Search...">
+<span class="input-group-btn">
+<button type="submit" name="search" id="search-btn" class="btn btn-flat">
+<i class="fa fa-search"></i>
+</button>
+</span>
 </div>
 </form>
-</div>
-</li>
 
-<li class="nav-item dropdown">
-<a class="nav-link" data-toggle="dropdown" href="#">
-<i class="far fa-comments"></i>
-<span class="badge badge-danger navbar-badge">3</span>
+
+<ul class="sidebar-menu" data-widget="tree">
+<li class="header">MAIN NAVIGATION</li>
+<li class="active treeview menu-open">
+<a href="#">
+<i class="fa fa-dashboard"></i> <span>Dashboard</span>
+<span class="pull-right-container">
+<i class="fa fa-angle-left pull-right"></i>
+</span>
 </a>
-<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-<a href="#" class="dropdown-item">
-
-<div class="media">
-<img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
-<div class="media-body">
-<h3 class="dropdown-item-title">
-Brad Diesel
-<span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
-</h3>
-<p class="text-sm">Call me whenever you can...</p>
-<p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-</div>
-</div>
-
-</a>
-<div class="dropdown-divider"></div>
-<a href="#" class="dropdown-item">
-
-<div class="media">
-<img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-<div class="media-body">
-<h3 class="dropdown-item-title">
-John Pierce
-<span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
-</h3>
-<p class="text-sm">I got your message bro</p>
-<p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-</div>
-</div>
-
-</a>
-<div class="dropdown-divider"></div>
-<a href="#" class="dropdown-item">
-
-<div class="media">
- <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-<div class="media-body">
-<h3 class="dropdown-item-title">
-Nora Silvester
-<span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
-</h3>
-<p class="text-sm">The subject goes here</p>
-<p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-</div>
-</div>
-
-</a>
-<div class="dropdown-divider"></div>
-<a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
-</div>
-</li>
-
-<li class="nav-item dropdown">
-<a class="nav-link" data-toggle="dropdown" href="#">
-<i class="far fa-bell"></i>
-<span class="badge badge-warning navbar-badge">15</span>
-</a>
-<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-<span class="dropdown-item dropdown-header">15 Notifications</span>
-<div class="dropdown-divider"></div>
-<a href="#" class="dropdown-item">
-<i class="fas fa-envelope mr-2"></i> 4 new messages
-<span class="float-right text-muted text-sm">3 mins</span>
-</a>
-<div class="dropdown-divider"></div>
-<a href="#" class="dropdown-item">
-<i class="fas fa-users mr-2"></i> 8 friend requests
-<span class="float-right text-muted text-sm">12 hours</span>
-</a>
-<div class="dropdown-divider"></div>
-<a href="#" class="dropdown-item">
-<i class="fas fa-file mr-2"></i> 3 new reports
-<span class="float-right text-muted text-sm">2 days</span>
-</a>
-<div class="dropdown-divider"></div>
-<a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
-</div>
-</li>
-<li class="nav-item">
-<a class="nav-link" data-widget="fullscreen" href="#" role="button">
-<i class="fas fa-expand-arrows-alt"></i>
-</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-<i class="fas fa-th-large"></i>
-</a>
-</li>
-</ul>
-</nav>
-
-
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
-
-<a href="../../index3.html" class="brand-link">
-<img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-<span class="brand-text font-weight-light">AdminLTE 3</span>
-</a>
-
-<div class="sidebar">
-
-<div class="user-panel mt-3 pb-3 mb-3 d-flex">
-<div class="image">
-<img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-</div>
-<div class="info">
-<a href="#" class="d-block">Alexander Pierce</a>
-</div>
-</div>
-
-<div class="form-inline">
-<div class="input-group" data-widget="sidebar-search">
-<input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-<div class="input-group-append">
-<button class="btn btn-sidebar">
-<i class="fas fa-search fa-fw"></i>
-</button>
-</div>
-</div>
-</div>
-
-<nav class="mt-2">
-<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-
-<li class="nav-item">
-<a href="#" class="nav-link">
-<i class="nav-icon fas fa-tachometer-alt"></i>
-<p>
-Dashboard
-<i class="right fas fa-angle-left"></i>
-</p>
-</a>
-<ul class="nav nav-treeview">
-<li class="nav-item">
-<a href="../../index.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Dashboard v1</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../../index2.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Dashboard v2</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../../index3.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Dashboard v3</p>
-</a>
-</li>
+<ul class="treeview-menu">
+<li><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+<li class="active"><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
 </ul>
 </li>
-<li class="nav-item">
-<a href="../widgets.html" class="nav-link">
-<i class="nav-icon fas fa-th"></i>
-<p>
-Widgets
-<span class="right badge badge-danger">New</span>
-</p>
+<li class="treeview">
+<a href="#">
+<i class="fa fa-files-o"></i>
+<span>Layout Options</span>
+<span class="pull-right-container">
+<span class="label label-primary pull-right">4</span>
+</span>
+</a>
+<ul class="treeview-menu">
+<li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
+<li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
+<li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
+<li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+</ul>
+</li>
+<li>
+<a href="pages/widgets.html">
+<i class="fa fa-th"></i> <span>Widgets</span>
+<span class="pull-right-container">
+<small class="label pull-right bg-green">new</small>
+</span>
 </a>
 </li>
-<li class="nav-item">
-<a href="#" class="nav-link">
-<i class="nav-icon fas fa-copy"></i>
-<p>
-Layout Options
-<i class="fas fa-angle-left right"></i>
-<span class="badge badge-info right">6</span>
-</p>
+<li class="treeview">
+<a href="#">
+<i class="fa fa-pie-chart"></i>
+<span>Charts</span>
+<span class="pull-right-container">
+<i class="fa fa-angle-left pull-right"></i>
+</span>
 </a>
-<ul class="nav nav-treeview">
-<li class="nav-item">
-<a href="../layout/top-nav.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Top Navigation</p>
+<ul class="treeview-menu">
+<li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+<li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
+<li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
+<li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+</ul>
+</li>
+<li class="treeview">
+<a href="#">
+<i class="fa fa-laptop"></i>
+<span>UI Elements</span>
+<span class="pull-right-container">
+<i class="fa fa-angle-left pull-right"></i>
+</span>
+</a>
+<ul class="treeview-menu">
+<li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
+<li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
+<li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
+<li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
+<li><a href="pages/UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
+<li><a href="pages/UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
+</ul>
+</li>
+<li class="treeview">
+<a href="#">
+<i class="fa fa-edit"></i> <span>Forms</span>
+<span class="pull-right-container">
+<i class="fa fa-angle-left pull-right"></i>
+</span>
+</a>
+<ul class="treeview-menu">
+<li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
+<li><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
+<li><a href="pages/forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
+</ul>
+</li>
+<li class="treeview">
+<a href="#">
+<i class="fa fa-table"></i> <span>Tables</span>
+<span class="pull-right-container">
+<i class="fa fa-angle-left pull-right"></i>
+</span>
+</a>
+<ul class="treeview-menu">
+<li><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
+<li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
+</ul>
+</li>
+<li>
+<a href="pages/calendar.html">
+<i class="fa fa-calendar"></i> <span>Calendar</span>
+<span class="pull-right-container">
+<small class="label pull-right bg-red">3</small>
+<small class="label pull-right bg-blue">17</small>
+</span>
 </a>
 </li>
-<li class="nav-item">
-<a href="../layout/top-nav-sidebar.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Top Navigation + Sidebar</p>
+<li>
+<a href="pages/mailbox/mailbox.html">
+<i class="fa fa-envelope"></i> <span>Mailbox</span>
+<span class="pull-right-container">
+<small class="label pull-right bg-yellow">12</small>
+<small class="label pull-right bg-green">16</small>
+<small class="label pull-right bg-red">5</small>
+</span>
 </a>
 </li>
-<li class="nav-item">
-<a href="../layout/boxed.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Boxed</p>
+<li class="treeview">
+<a href="#">
+<i class="fa fa-folder"></i> <span>Examples</span>
+<span class="pull-right-container">
+<i class="fa fa-angle-left pull-right"></i>
+</span>
 </a>
+<ul class="treeview-menu">
+<li><a href="pages/examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
+<li><a href="pages/examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
+<li><a href="pages/examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
+<li><a href="pages/examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
+<li><a href="pages/examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+<li><a href="pages/examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
+<li><a href="pages/examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>
+<li><a href="pages/examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>
+<li><a href="pages/examples/pace.html"><i class="fa fa-circle-o"></i> Pace Page</a></li>
+</ul>
 </li>
-<li class="nav-item">
-<a href="../layout/fixed-sidebar.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Fixed Sidebar</p>
+<li class="treeview">
+<a href="#">
+<i class="fa fa-share"></i> <span>Multilevel</span>
+<span class="pull-right-container">
+<i class="fa fa-angle-left pull-right"></i>
+</span>
 </a>
-</li>
-<li class="nav-item">
-<a href="../layout/fixed-sidebar-custom.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Fixed Sidebar <small>+ Custom Area</small></p>
+<ul class="treeview-menu">
+<li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
+<li class="treeview">
+<a href="#"><i class="fa fa-circle-o"></i> Level One
+<span class="pull-right-container">
+<i class="fa fa-angle-left pull-right"></i>
+</span>
 </a>
-</li>
-<li class="nav-item">
-<a href="../layout/fixed-topnav.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Fixed Navbar</p>
+<ul class="treeview-menu">
+<li><a href="#"><i class="fa fa-circle-o"></i> Level Two</a></li>
+<li class="treeview">
+<a href="#"><i class="fa fa-circle-o"></i> Level Two
+<span class="pull-right-container">
+<i class="fa fa-angle-left pull-right"></i>
+</span>
 </a>
-</li>
-<li class="nav-item">
-<a href="../layout/fixed-footer.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Fixed Footer</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../layout/collapsed-sidebar.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Collapsed Sidebar</p>
-</a>
+<ul class="treeview-menu">
+<li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
+<li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
+</ul>
 </li>
 </ul>
 </li>
-<li class="nav-item">
-<a href="#" class="nav-link">
-<i class="nav-icon fas fa-chart-pie"></i>
-<p>
-Charts
-<i class="right fas fa-angle-left"></i>
-</p>
-</a>
-<ul class="nav nav-treeview">
-<li class="nav-item">
-<a href="../charts/chartjs.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>ChartJS</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../charts/flot.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Flot</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../charts/inline.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Inline</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../charts/uplot.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>uPlot</p>
-</a>
-</li>
+<li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
 </ul>
 </li>
-<li class="nav-item">
-<a href="#" class="nav-link">
-<i class="nav-icon fas fa-tree"></i>
-<p>
-UI Elements
-<i class="fas fa-angle-left right"></i>
-</p>
-</a>
-<ul class="nav nav-treeview">
-<li class="nav-item">
-<a href="../UI/general.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>General</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../UI/icons.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Icons</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../UI/buttons.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Buttons</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../UI/sliders.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Sliders</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../UI/modals.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Modals & Alerts</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../UI/navbar.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Navbar & Tabs</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../UI/timeline.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Timeline</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../UI/ribbons.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Ribbons</p>
-</a>
-</li>
+<li><a href="https://adminlte.io/docs"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
+<li class="header">LABELS</li>
+<li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
+<li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
+<li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
 </ul>
-</li>
-<li class="nav-item">
-<a href="#" class="nav-link">
-<i class="nav-icon fas fa-edit"></i>
-<p>
-Forms
-<i class="fas fa-angle-left right"></i>
-</p>
-</a>
-<ul class="nav nav-treeview">
-<li class="nav-item">
-<a href="../forms/general.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>General Elements</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../forms/advanced.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Advanced Elements</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../forms/editors.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Editors</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../forms/validation.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Validation</p>
-</a>
-</li>
-</ul>
-</li>
-<li class="nav-item">
-<a href="#" class="nav-link">
-<i class="nav-icon fas fa-table"></i>
-<p>
-Tables
-<i class="fas fa-angle-left right"></i>
-</p>
-</a>
-<ul class="nav nav-treeview">
-<li class="nav-item">
-<a href="../tables/simple.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Simple Tables</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../tables/data.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>DataTables</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../tables/jsgrid.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>jsGrid</p>
-</a>
-</li>
-</ul>
-</li>
-<li class="nav-header">EXAMPLES</li>
-<li class="nav-item">
-<a href="../calendar.html" class="nav-link">
-<i class="nav-icon far fa-calendar-alt"></i>
-<p>
-Calendar
-<span class="badge badge-info right">2</span>
-</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../gallery.html" class="nav-link">
-<i class="nav-icon far fa-image"></i>
-<p>
-Gallery
-</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../kanban.html" class="nav-link">
-<i class="nav-icon fas fa-columns"></i>
-<p>
-Kanban Board
-</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="#" class="nav-link">
-<i class="nav-icon far fa-envelope"></i>
-<p>
-Mailbox
-<i class="fas fa-angle-left right"></i>
-</p>
-</a>
-<ul class="nav nav-treeview">
-<li class="nav-item">
-<a href="../mailbox/mailbox.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Inbox</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../mailbox/compose.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Compose</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../mailbox/read-mail.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Read</p>
-</a>
-</li>
-</ul>
-</li>
-<li class="nav-item">
-<a href="#" class="nav-link">
-<i class="nav-icon fas fa-book"></i>
-<p>
-Pages
-<i class="fas fa-angle-left right"></i>
-</p>
-</a>
-<ul class="nav nav-treeview">
-<li class="nav-item">
-<a href="../examples/invoice.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Invoice</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../examples/profile.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Profile</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../examples/e-commerce.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>E-commerce</p>
-</a>
- </li>
-<li class="nav-item">
-<a href="../examples/projects.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Projects</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../examples/project-add.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Project Add</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../examples/project-edit.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Project Edit</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../examples/project-detail.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Project Detail</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../examples/contacts.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Contacts</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../examples/faq.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>FAQ</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../examples/contact-us.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Contact us</p>
-</a>
-</li>
-</ul>
-</li>
-<li class="nav-item menu-open">
-<a href="#" class="nav-link active">
-<i class="nav-icon far fa-plus-square"></i>
-<p>
-Extras
-<i class="fas fa-angle-left right"></i>
-</p>
-</a>
-<ul class="nav nav-treeview">
-<li class="nav-item">
-<a href="#" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>
-Login & Register v1
-<i class="fas fa-angle-left right"></i>
-</p>
-</a>
-<ul class="nav nav-treeview">
-<li class="nav-item">
-<a href="../examples/login.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Login v1</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../examples/register.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Register v1</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../examples/forgot-password.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Forgot Password v1</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../examples/recover-password.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Recover Password v1</p>
-</a>
-</li>
-</ul>
-</li>
-<li class="nav-item">
-<a href="#" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>
-Login & Register v2
-<i class="fas fa-angle-left right"></i>
-</p>
-</a>
-<ul class="nav nav-treeview">
-<li class="nav-item">
-<a href="../examples/login-v2.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Login v2</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../examples/register-v2.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Register v2</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../examples/forgot-password-v2.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Forgot Password v2</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../examples/recover-password-v2.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Recover Password v2</p>
-</a>
-</li>
-</ul>
-</li>
-<li class="nav-item">
-<a href="../examples/lockscreen.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Lockscreen</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../examples/legacy-user-menu.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Legacy User Menu</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../examples/language-menu.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Language Menu</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../examples/404.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Error 404</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../examples/500.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Error 500</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../examples/pace.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Pace</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../examples/blank.html" class="nav-link active">
-<i class="far fa-circle nav-icon"></i>
-<p>Blank Page</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../../starter.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Starter Page</p>
-</a>
-</li>
-</ul>
-</li>
-<li class="nav-item">
-<a href="#" class="nav-link">
-<i class="nav-icon fas fa-search"></i>
-<p>
-Search
-<i class="fas fa-angle-left right"></i>
-</p>
-</a>
-<ul class="nav nav-treeview">
-<li class="nav-item">
-<a href="../search/simple.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Simple Search</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="../search/enhanced.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Enhanced</p>
-</a>
-</li>
-</ul>
-</li>
-<li class="nav-header">MISCELLANEOUS</li>
-<li class="nav-item">
-<a href="../../iframe.html" class="nav-link">
-<i class="nav-icon fas fa-ellipsis-h"></i>
-<p>Tabbed IFrame Plugin</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="https://adminlte.io/docs/3.1/" class="nav-link">
-<i class="nav-icon fas fa-file"></i>
-<p>Documentation</p>
-</a>
-</li>
-<li class="nav-header">MULTI LEVEL EXAMPLE</li>
-<li class="nav-item">
-<a href="#" class="nav-link">
-<i class="fas fa-circle nav-icon"></i>
-<p>Level 1</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="#" class="nav-link">
-<i class="nav-icon fas fa-circle"></i>
-<p>
-Level 1
-<i class="right fas fa-angle-left"></i>
-</p>
-</a>
-<ul class="nav nav-treeview">
-<li class="nav-item">
-<a href="#" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Level 2</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="#" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>
-Level 2
-<i class="right fas fa-angle-left"></i>
-</p>
-</a>
-<ul class="nav nav-treeview">
-<li class="nav-item">
-<a href="#" class="nav-link">
-<i class="far fa-dot-circle nav-icon"></i>
-<p>Level 3</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="#" class="nav-link">
-<i class="far fa-dot-circle nav-icon"></i>
-<p>Level 3</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="#" class="nav-link">
-<i class="far fa-dot-circle nav-icon"></i>
-<p>Level 3</p>
-</a>
-</li>
-</ul>
-</li>
-<li class="nav-item">
-<a href="#" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Level 2</p>
-</a>
-</li>
-</ul>
-</li>
-<li class="nav-item">
-<a href="#" class="nav-link">
-<i class="fas fa-circle nav-icon"></i>
-<p>Level 1</p>
-</a>
-</li>
-<li class="nav-header">LABELS</li>
-<li class="nav-item">
-<a href="#" class="nav-link">
-<i class="nav-icon far fa-circle text-danger"></i>
-<p class="text">Important</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="#" class="nav-link">
-<i class="nav-icon far fa-circle text-warning"></i>
-<p>Warning</p>
-</a>
-</li>
-<li class="nav-item">
-<a href="#" class="nav-link">
-<i class="nav-icon far fa-circle text-info"></i>
-<p>Informational</p>
-</a>
-</li>
-</ul>
-</nav>
-
-</div>
+</section>
 
 </aside>
 
 <div class="content-wrapper">
 
 <section class="content-header">
-<div class="container-fluid">
-<div class="row mb-2">
-<div class="col-sm-6">
-<h1>Blank Page</h1>
-</div>
-<div class="col-sm-6">
-<ol class="breadcrumb float-sm-right">
-<li class="breadcrumb-item"><a href="#">Home</a></li>
-<li class="breadcrumb-item active">Blank Page</li>
+<h1>
+Dashboard
+<small>Version 2.0</small>
+</h1>
+<ol class="breadcrumb">
+<li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+<li class="active">Dashboard</li>
 </ol>
-</div>
-</div>
-</div>
 </section>
 
 <section class="content">
 
-<div class="card">
-<div class="card-header">
-<h3 class="card-title">Title</h3>
-<div class="card-tools">
-<button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-<i class="fas fa-minus"></i>
-</button>
-<button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
-<i class="fas fa-times"></i>
-</button>
-</div>
-</div>
-<div class="card-body">
-Start creating your amazing application!
+<div class="row">
+<div class="col-md-3 col-sm-6 col-xs-12">
+<div class="info-box">
+<span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
+<div class="info-box-content">
+<span class="info-box-text">CPU Traffic</span>
+<span class="info-box-number">90<small>%</small></span>
 </div>
 
-<div class="card-footer">
-Footer
+</div>
+
+</div>
+
+<div class="col-md-3 col-sm-6 col-xs-12">
+<div class="info-box">
+<span class="info-box-icon bg-red"><i class="fa fa-google-plus"></i></span>
+<div class="info-box-content">
+<span class="info-box-text">Likes</span>
+<span class="info-box-number">41,410</span>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="clearfix visible-sm-block"></div>
+<div class="col-md-3 col-sm-6 col-xs-12">
+<div class="info-box">
+<span class="info-box-icon bg-green"><i class="ion ion-ios-cart-outline"></i></span>
+<div class="info-box-content">
+<span class="info-box-text">Sales</span>
+<span class="info-box-number">760</span>
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3 col-sm-6 col-xs-12">
+<div class="info-box">
+<span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
+<div class="info-box-content">
+<span class="info-box-text">New Members</span>
+<span class="info-box-number">2,000</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-md-12">
+<div class="box">
+<div class="box-header with-border">
+<h3 class="box-title">Monthly Recap Report</h3>
+<div class="box-tools pull-right">
+<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+</button>
+<div class="btn-group">
+<button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="dropdown">
+<i class="fa fa-wrench"></i></button>
+<ul class="dropdown-menu" role="menu">
+<li><a href="#">Action</a></li>
+<li><a href="#">Another action</a></li>
+<li><a href="#">Something else here</a></li>
+<li class="divider"></li>
+<li><a href="#">Separated link</a></li>
+</ul>
+</div>
+<button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+</div>
+</div>
+
+<div class="box-body">
+<div class="row">
+<div class="col-md-8">
+<p class="text-center">
+<strong>Sales: 1 Jan, 2014 - 30 Jul, 2014</strong>
+</p>
+<div class="chart">
+
+<canvas id="salesChart" style="height: 180px;"></canvas>
+</div>
+
+</div>
+
+<div class="col-md-4">
+<p class="text-center">
+<strong>Goal Completion</strong>
+</p>
+<div class="progress-group">
+<span class="progress-text">Add Products to Cart</span>
+<span class="progress-number"><b>160</b>/200</span>
+<div class="progress sm">
+<div class="progress-bar progress-bar-aqua" style="width: 80%"></div>
+</div>
+</div>
+
+<div class="progress-group">
+<span class="progress-text">Complete Purchase</span>
+<span class="progress-number"><b>310</b>/400</span>
+<div class="progress sm">
+<div class="progress-bar progress-bar-red" style="width: 80%"></div>
+</div>
+</div>
+
+<div class="progress-group">
+<span class="progress-text">Visit Premium Page</span>
+<span class="progress-number"><b>480</b>/800</span>
+<div class="progress sm">
+<div class="progress-bar progress-bar-green" style="width: 80%"></div>
+</div>
+</div>
+
+<div class="progress-group">
+<span class="progress-text">Send Inquiries</span>
+<span class="progress-number"><b>250</b>/500</span>
+<div class="progress sm">
+<div class="progress-bar progress-bar-yellow" style="width: 80%"></div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="box-footer">
+<div class="row">
+<div class="col-sm-3 col-xs-6">
+ <div class="description-block border-right">
+<span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 17%</span>
+<h5 class="description-header">$35,210.43</h5>
+<span class="description-text">TOTAL REVENUE</span>
+</div>
+
+</div>
+
+<div class="col-sm-3 col-xs-6">
+<div class="description-block border-right">
+<span class="description-percentage text-yellow"><i class="fa fa-caret-left"></i> 0%</span>
+<h5 class="description-header">$10,390.90</h5>
+<span class="description-text">TOTAL COST</span>
+</div>
+
+</div>
+
+<div class="col-sm-3 col-xs-6">
+<div class="description-block border-right">
+<span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 20%</span>
+<h5 class="description-header">$24,813.53</h5>
+<span class="description-text">TOTAL PROFIT</span>
+</div>
+
+</div>
+
+<div class="col-sm-3 col-xs-6">
+<div class="description-block">
+<span class="description-percentage text-red"><i class="fa fa-caret-down"></i> 18%</span>
+<h5 class="description-header">1200</h5>
+<span class="description-text">GOAL COMPLETIONS</span>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="row">
+
+<div class="col-md-8">
+
+<div class="box box-success">
+<div class="box-header with-border">
+<h3 class="box-title">Visitors Report</h3>
+<div class="box-tools pull-right">
+<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+</button>
+<button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+</div>
+</div>
+
+<div class="box-body no-padding">
+<div class="row">
+<div class="col-md-9 col-sm-8">
+<div class="pad">
+
+<div id="world-map-markers" style="height: 325px;"></div>
+</div>
+</div>
+
+<div class="col-md-3 col-sm-4">
+<div class="pad box-pane-right bg-green" style="min-height: 280px">
+<div class="description-block margin-bottom">
+<div class="sparkbar pad" data-color="#fff">90,70,90,70,75,80,70</div>
+<h5 class="description-header">8390</h5>
+<span class="description-text">Visits</span>
+</div>
+
+<div class="description-block margin-bottom">
+<div class="sparkbar pad" data-color="#fff">90,50,90,70,61,83,63</div>
+<h5 class="description-header">30%</h5>
+<span class="description-text">Referrals</span>
+</div>
+
+<div class="description-block">
+<div class="sparkbar pad" data-color="#fff">90,50,90,70,61,83,63</div>
+<h5 class="description-header">70%</h5>
+<span class="description-text">Organic</span>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-md-6">
+
+<div class="box box-warning direct-chat direct-chat-warning">
+<div class="box-header with-border">
+<h3 class="box-title">Direct Chat</h3>
+<div class="box-tools pull-right">
+<span data-toggle="tooltip" title="3 New Messages" class="badge bg-yellow">3</span>
+<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+</button>
+<button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle">
+<i class="fa fa-comments"></i></button>
+<button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
+</button>
+</div>
+</div>
+
+<div class="box-body">
+
+<div class="direct-chat-messages">
+
+<div class="direct-chat-msg">
+<div class="direct-chat-info clearfix">
+<span class="direct-chat-name pull-left">Alexander Pierce</span>
+<span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
+</div>
+
+<img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image">
+
+<div class="direct-chat-text">
+Is this template really for free? That's unbelievable!
+</div>
+
+</div>
+
+
+<div class="direct-chat-msg right">
+<div class="direct-chat-info clearfix">
+<span class="direct-chat-name pull-right">Sarah Bullock</span>
+<span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
+</div>
+
+<img class="direct-chat-img" src="dist/img/user3-128x128.jpg" alt="message user image">
+
+<div class="direct-chat-text">
+You better believe it!
+</div>
+
+</div>
+
+
+<div class="direct-chat-msg">
+<div class="direct-chat-info clearfix">
+<span class="direct-chat-name pull-left">Alexander Pierce</span>
+<span class="direct-chat-timestamp pull-right">23 Jan 5:37 pm</span>
+</div>
+
+<img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image">
+
+<div class="direct-chat-text">
+Working with AdminLTE on a great new app! Wanna join?
+ </div>
+
+</div>
+
+
+<div class="direct-chat-msg right">
+<div class="direct-chat-info clearfix">
+<span class="direct-chat-name pull-right">Sarah Bullock</span>
+<span class="direct-chat-timestamp pull-left">23 Jan 6:10 pm</span>
+</div>
+
+<img class="direct-chat-img" src="dist/img/user3-128x128.jpg" alt="message user image">
+
+<div class="direct-chat-text">
+I would love to.
+</div>
+
+</div>
+
+</div>
+
+
+<div class="direct-chat-contacts">
+<ul class="contacts-list">
+<li>
+<a href="#">
+<img class="contacts-list-img" src="dist/img/user1-128x128.jpg" alt="User Image">
+<div class="contacts-list-info">
+<span class="contacts-list-name">
+Count Dracula
+<small class="contacts-list-date pull-right">2/28/2015</small>
+</span>
+<span class="contacts-list-msg">How have you been? I was...</span>
+</div>
+
+</a>
+</li>
+
+<li>
+<a href="#">
+<img class="contacts-list-img" src="dist/img/user7-128x128.jpg" alt="User Image">
+<div class="contacts-list-info">
+<span class="contacts-list-name">
+Sarah Doe
+<small class="contacts-list-date pull-right">2/23/2015</small>
+</span>
+<span class="contacts-list-msg">I will be waiting for...</span>
+</div>
+
+</a>
+</li>
+
+<li>
+<a href="#">
+<img class="contacts-list-img" src="dist/img/user3-128x128.jpg" alt="User Image">
+<div class="contacts-list-info">
+<span class="contacts-list-name">
+Nadia Jolie
+<small class="contacts-list-date pull-right">2/20/2015</small>
+</span>
+<span class="contacts-list-msg">I'll call you back at...</span>
+</div>
+
+</a>
+</li>
+
+<li>
+<a href="#">
+<img class="contacts-list-img" src="dist/img/user5-128x128.jpg" alt="User Image">
+<div class="contacts-list-info">
+<span class="contacts-list-name">
+Nora S. Vans
+<small class="contacts-list-date pull-right">2/10/2015</small>
+</span>
+<span class="contacts-list-msg">Where is your new...</span>
+ </div>
+
+</a>
+</li>
+
+<li>
+<a href="#">
+<img class="contacts-list-img" src="dist/img/user6-128x128.jpg" alt="User Image">
+<div class="contacts-list-info">
+<span class="contacts-list-name">
+John K.
+<small class="contacts-list-date pull-right">1/27/2015</small>
+</span>
+<span class="contacts-list-msg">Can I take a look at...</span>
+</div>
+
+</a>
+</li>
+
+<li>
+<a href="#">
+<img class="contacts-list-img" src="dist/img/user8-128x128.jpg" alt="User Image">
+<div class="contacts-list-info">
+<span class="contacts-list-name">
+Kenneth M.
+<small class="contacts-list-date pull-right">1/4/2015</small>
+</span>
+<span class="contacts-list-msg">Never mind I found...</span>
+</div>
+
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="box-footer">
+<form action="#" method="post">
+<div class="input-group">
+<input type="text" name="message" placeholder="Type Message ..." class="form-control">
+<span class="input-group-btn">
+<button type="button" class="btn btn-warning btn-flat">Send</button>
+</span>
+</div>
+</form>
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="box box-danger">
+<div class="box-header with-border">
+<h3 class="box-title">Latest Members</h3>
+<div class="box-tools pull-right">
+<span class="label label-danger">8 New Members</span>
+<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+</button>
+<button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
+</button>
+</div>
+</div>
+
+<div class="box-body no-padding">
+<ul class="users-list clearfix">
+<li>
+<img src="dist/img/user1-128x128.jpg" alt="User Image">
+<a class="users-list-name" href="#">Alexander Pierce</a>
+<span class="users-list-date">Today</span>
+</li>
+<li>
+<img src="dist/img/user8-128x128.jpg" alt="User Image">
+<a class="users-list-name" href="#">Norman</a>
+<span class="users-list-date">Yesterday</span>
+</li>
+<li>
+<img src="dist/img/user7-128x128.jpg" alt="User Image">
+<a class="users-list-name" href="#">Jane</a>
+ <span class="users-list-date">12 Jan</span>
+</li>
+<li>
+<img src="dist/img/user6-128x128.jpg" alt="User Image">
+<a class="users-list-name" href="#">John</a>
+<span class="users-list-date">12 Jan</span>
+</li>
+<li>
+<img src="dist/img/user2-160x160.jpg" alt="User Image">
+<a class="users-list-name" href="#">Alexander</a>
+<span class="users-list-date">13 Jan</span>
+</li>
+<li>
+<img src="dist/img/user5-128x128.jpg" alt="User Image">
+<a class="users-list-name" href="#">Sarah</a>
+<span class="users-list-date">14 Jan</span>
+</li>
+<li>
+<img src="dist/img/user4-128x128.jpg" alt="User Image">
+<a class="users-list-name" href="#">Nora</a>
+<span class="users-list-date">15 Jan</span>
+</li>
+<li>
+<img src="dist/img/user3-128x128.jpg" alt="User Image">
+<a class="users-list-name" href="#">Nadia</a>
+<span class="users-list-date">15 Jan</span>
+</li>
+</ul>
+
+</div>
+
+<div class="box-footer text-center">
+<a href="javascript:void(0)" class="uppercase">View All Users</a>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="box box-info">
+<div class="box-header with-border">
+<h3 class="box-title">Latest Orders</h3>
+<div class="box-tools pull-right">
+<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+</button>
+<button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+</div>
+</div>
+
+<div class="box-body">
+<div class="table-responsive">
+<table class="table no-margin">
+<thead>
+<tr>
+<th>Order ID</th>
+<th>Item</th>
+<th>Status</th>
+<th>Popularity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="pages/examples/invoice.html">OR9842</a></td>
+<td>Call of Duty IV</td>
+<td><span class="label label-success">Shipped</span></td>
+<td>
+<div class="sparkbar" data-color="#00a65a" data-height="20">90,80,90,-70,61,-83,63</div>
+</td>
+</tr>
+<tr>
+<td><a href="pages/examples/invoice.html">OR1848</a></td>
+<td>Samsung Smart TV</td>
+<td><span class="label label-warning">Pending</span></td>
+<td>
+<div class="sparkbar" data-color="#f39c12" data-height="20">90,80,-90,70,61,-83,68</div>
+</td>
+</tr>
+<tr>
+<td><a href="pages/examples/invoice.html">OR7429</a></td>
+<td>iPhone 6 Plus</td>
+<td><span class="label label-danger">Delivered</span></td>
+<td>
+<div class="sparkbar" data-color="#f56954" data-height="20">90,-80,90,70,-61,83,63</div>
+</td>
+</tr>
+<tr>
+<td><a href="pages/examples/invoice.html">OR7429</a></td>
+<td>Samsung Smart TV</td>
+<td><span class="label label-info">Processing</span></td>
+<td>
+<div class="sparkbar" data-color="#00c0ef" data-height="20">90,80,-90,70,-61,83,63</div>
+</td>
+</tr>
+<tr>
+<td><a href="pages/examples/invoice.html">OR1848</a></td>
+<td>Samsung Smart TV</td>
+<td><span class="label label-warning">Pending</span></td>
+<td>
+<div class="sparkbar" data-color="#f39c12" data-height="20">90,80,-90,70,61,-83,68</div>
+</td>
+</tr>
+<tr>
+<td><a href="pages/examples/invoice.html">OR7429</a></td>
+<td>iPhone 6 Plus</td>
+<td><span class="label label-danger">Delivered</span></td>
+<td>
+<div class="sparkbar" data-color="#f56954" data-height="20">90,-80,90,70,-61,83,63</div>
+</td>
+</tr>
+<tr>
+<td><a href="pages/examples/invoice.html">OR9842</a></td>
+<td>Call of Duty IV</td>
+<td><span class="label label-success">Shipped</span></td>
+<td>
+<div class="sparkbar" data-color="#00a65a" data-height="20">90,80,90,-70,61,-83,63</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</div>
+
+<div class="box-footer clearfix">
+<a href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-left">Place New Order</a>
+<a href="javascript:void(0)" class="btn btn-sm btn-default btn-flat pull-right">View All Orders</a>
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="info-box bg-yellow">
+<span class="info-box-icon"><i class="ion ion-ios-pricetag-outline"></i></span>
+<div class="info-box-content">
+<span class="info-box-text">Inventory</span>
+<span class="info-box-number">5,200</span>
+<div class="progress">
+<div class="progress-bar" style="width: 50%"></div>
+</div>
+<span class="progress-description">
+50% Increase in 30 Days
+</span>
+</div>
+
+</div>
+
+<div class="info-box bg-green">
+<span class="info-box-icon"><i class="ion ion-ios-heart-outline"></i></span>
+<div class="info-box-content">
+<span class="info-box-text">Mentions</span>
+<span class="info-box-number">92,050</span>
+<div class="progress">
+<div class="progress-bar" style="width: 20%"></div>
+</div>
+<span class="progress-description">
+20% Increase in 30 Days
+</span>
+</div>
+
+</div>
+
+<div class="info-box bg-red">
+<span class="info-box-icon"><i class="ion ion-ios-cloud-download-outline"></i></span>
+<div class="info-box-content">
+<span class="info-box-text">Downloads</span>
+<span class="info-box-number">114,381</span>
+<div class="progress">
+<div class="progress-bar" style="width: 70%"></div>
+</div>
+<span class="progress-description">
+70% Increase in 30 Days
+</span>
+</div>
+
+</div>
+
+<div class="info-box bg-aqua">
+<span class="info-box-icon"><i class="ion-ios-chatbubble-outline"></i></span>
+<div class="info-box-content">
+<span class="info-box-text">Direct Messages</span>
+<span class="info-box-number">163,921</span>
+<div class="progress">
+<div class="progress-bar" style="width: 40%"></div>
+</div>
+<span class="progress-description">
+40% Increase in 30 Days
+</span>
+</div>
+
+</div>
+
+<div class="box box-default">
+<div class="box-header with-border">
+<h3 class="box-title">Browser Usage</h3>
+<div class="box-tools pull-right">
+<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+</button>
+<button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+</div>
+</div>
+
+<div class="box-body">
+<div class="row">
+<div class="col-md-8">
+<div class="chart-responsive">
+<canvas id="pieChart" height="150"></canvas>
+</div>
+
+</div>
+
+<div class="col-md-4">
+<ul class="chart-legend clearfix">
+<li><i class="fa fa-circle-o text-red"></i> Chrome</li>
+<li><i class="fa fa-circle-o text-green"></i> IE</li>
+<li><i class="fa fa-circle-o text-yellow"></i> FireFox</li>
+<li><i class="fa fa-circle-o text-aqua"></i> Safari</li>
+<li><i class="fa fa-circle-o text-light-blue"></i> Opera</li>
+<li><i class="fa fa-circle-o text-gray"></i> Navigator</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div class="box-footer no-padding">
+<ul class="nav nav-pills nav-stacked">
+<li><a href="#">United States of America
+<span class="pull-right text-red"><i class="fa fa-angle-down"></i> 12%</span></a></li>
+<li><a href="#">India <span class="pull-right text-green"><i class="fa fa-angle-up"></i> 4%</span></a>
+</li>
+<li><a href="#">China
+<span class="pull-right text-yellow"><i class="fa fa-angle-left"></i> 0%</span></a></li>
+</ul>
+</div>
+
+</div>
+
+
+<div class="box box-primary">
+<div class="box-header with-border">
+<h3 class="box-title">Recently Added Products</h3>
+<div class="box-tools pull-right">
+<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+</button>
+<button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+</div>
+</div>
+
+<div class="box-body">
+<ul class="products-list product-list-in-box">
+<li class="item">
+<div class="product-img">
+<img src="dist/img/default-50x50.gif" alt="Product Image">
+</div>
+<div class="product-info">
+<a href="javascript:void(0)" class="product-title">Samsung TV
+<span class="label label-warning pull-right">$1800</span></a>
+<span class="product-description">
+Samsung 32" 1080p 60Hz LED Smart HDTV.
+</span>
+</div>
+</li>
+
+<li class="item">
+<div class="product-img">
+<img src="dist/img/default-50x50.gif" alt="Product Image">
+</div>
+<div class="product-info">
+<a href="javascript:void(0)" class="product-title">Bicycle
+<span class="label label-info pull-right">$700</span></a>
+<span class="product-description">
+26" Mongoose Dolomite Men's 7-speed, Navy Blue.
+</span>
+</div>
+</li>
+
+<li class="item">
+<div class="product-img">
+<img src="dist/img/default-50x50.gif" alt="Product Image">
+</div>
+<div class="product-info">
+<a href="javascript:void(0)" class="product-title">Xbox One <span class="label label-danger pull-right">$350</span></a>
+<span class="product-description">
+Xbox One Console Bundle with Halo Master Chief Collection.
+</span>
+</div>
+</li>
+
+<li class="item">
+<div class="product-img">
+<img src="dist/img/default-50x50.gif" alt="Product Image">
+</div>
+<div class="product-info">
+<a href="javascript:void(0)" class="product-title">PlayStation 4
+<span class="label label-success pull-right">$399</span></a>
+<span class="product-description">
+PlayStation 4 500GB Console (PS4)
+</span>
+</div>
+</li>
+
+</ul>
+</div>
+
+<div class="box-footer text-center">
+<a href="javascript:void(0)" class="uppercase">View All Products</a>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -868,25 +1282,199 @@ Footer
 </div>
 
 <footer class="main-footer">
-<div class="float-right d-none d-sm-block">
-<b>Version</b> 3.2.0
+<div class="pull-right hidden-xs">
+<b>Version</b> 2.4.13
 </div>
-<strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+<strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE</a>.</strong> All rights
+reserved.
 </footer>
 
 <aside class="control-sidebar control-sidebar-dark">
 
-</aside>
+<ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+<li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+<li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+</ul>
+
+<div class="tab-content">
+
+<div class="tab-pane" id="control-sidebar-home-tab">
+<h3 class="control-sidebar-heading">Recent Activity</h3>
+<ul class="control-sidebar-menu">
+<li>
+<a href="javascript:void(0)">
+<i class="menu-icon fa fa-birthday-cake bg-red"></i>
+<div class="menu-info">
+<h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+<p>Will be 23 on April 24th</p>
+</div>
+</a>
+</li>
+<li>
+<a href="javascript:void(0)">
+<i class="menu-icon fa fa-user bg-yellow"></i>
+<div class="menu-info">
+<h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>
+<p>New phone +1(800)555-1234</p>
+</div>
+</a>
+</li>
+<li>
+<a href="javascript:void(0)">
+<i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
+<div class="menu-info">
+<h4 class="control-sidebar-subheading">Nora Joined Mailing List</h4>
+<p><span class="__cf_email__" data-cfemail="bad4d5c8dbfadfc2dbd7cad6df94d9d5d7">[email&#160;protected]</span></p>
+</div>
+</a>
+</li>
+<li>
+<a href="javascript:void(0)">
+<i class="menu-icon fa fa-file-code-o bg-green"></i>
+<div class="menu-info">
+<h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
+<p>Execution time 5 seconds</p>
+</div>
+</a>
+</li>
+</ul>
+
+<h3 class="control-sidebar-heading">Tasks Progress</h3>
+<ul class="control-sidebar-menu">
+<li>
+<a href="javascript:void(0)">
+<h4 class="control-sidebar-subheading">
+Custom Template Design
+<span class="label label-danger pull-right">70%</span>
+</h4>
+<div class="progress progress-xxs">
+<div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+</div>
+</a>
+</li>
+<li>
+<a href="javascript:void(0)">
+<h4 class="control-sidebar-subheading">
+Update Resume
+<span class="label label-success pull-right">95%</span>
+</h4>
+<div class="progress progress-xxs">
+<div class="progress-bar progress-bar-success" style="width: 95%"></div>
+</div>
+</a>
+</li>
+<li>
+<a href="javascript:void(0)">
+<h4 class="control-sidebar-subheading">
+Laravel Integration
+<span class="label label-warning pull-right">50%</span>
+</h4>
+<div class="progress progress-xxs">
+<div class="progress-bar progress-bar-warning" style="width: 50%"></div>
+</div>
+</a>
+</li>
+<li>
+<a href="javascript:void(0)">
+<h4 class="control-sidebar-subheading">
+Back End Framework
+<span class="label label-primary pull-right">68%</span>
+</h4>
+<div class="progress progress-xxs">
+<div class="progress-bar progress-bar-primary" style="width: 68%"></div>
+</div>
+</a>
+</li>
+</ul>
 
 </div>
 
 
-<script src="../../plugins/jquery/jquery.min.js"></script>
+<div class="tab-pane" id="control-sidebar-settings-tab">
+<form method="post">
+<h3 class="control-sidebar-heading">General Settings</h3>
+<div class="form-group">
+<label class="control-sidebar-subheading">
+Report panel usage
+<input type="checkbox" class="pull-right" checked>
+</label>
+ <p>
+Some information about this general settings option
+</p>
+</div>
 
-<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<div class="form-group">
+<label class="control-sidebar-subheading">
+Allow mail redirect
+<input type="checkbox" class="pull-right" checked>
+</label>
+<p>
+Other sets of options are available
+</p>
+</div>
 
-<script src="../../dist/js/adminlte.min.js?v=3.2.0"></script>
+<div class="form-group">
+<label class="control-sidebar-subheading">
+Expose author name in posts
+<input type="checkbox" class="pull-right" checked>
+</label>
+<p>
+Allow the user to show his name in blog posts
+</p>
+</div>
 
-<script src="../../dist/js/demo.js"></script>
+<h3 class="control-sidebar-heading">Chat Settings</h3>
+<div class="form-group">
+<label class="control-sidebar-subheading">
+Show me as online
+<input type="checkbox" class="pull-right" checked>
+</label>
+</div>
+
+<div class="form-group">
+<label class="control-sidebar-subheading">
+Turn off notifications
+<input type="checkbox" class="pull-right">
+</label>
+</div>
+
+<div class="form-group">
+<label class="control-sidebar-subheading">
+Delete chat history
+<a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
+</label>
+</div>
+
+</form>
+</div>
+
+</div>
+</aside>
+
+
+<div class="control-sidebar-bg"></div>
+</div>
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+
+<script src="dist/js/adminlte.min.js"></script>
+
+<script src="bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+
+<script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+
+<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+
+<script src="bower_components/chart.js/Chart.js"></script>
+
+<script src="dist/js/pages/dashboard2.js"></script>
+
+<script src="dist/js/demo.js"></script>
 </body>
 </html>
